@@ -1,5 +1,8 @@
 const express = require('express');
+require('./models/User');
+
 require('./services/passport');
+require('./services/mongoose');
 
 const app = express();
 require('./routes/authRoutes')(app);
